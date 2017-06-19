@@ -19,6 +19,14 @@ server.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '../src/index.html'));
 });
 
+server.get('/user', (rec, res) => {
+  res.json([
+    {"id": 1, "firstName": "Joe", "lastName": "Jonson"},
+    {"id": 2, "firstName": "Ben", "lastName": "Smith"},
+    {"id": 3, "firstName": "Sean", "lastName": "Been"}
+  ]);
+});
+
 server.listen(port, err => {
   if (err) {
     console.log(err);
