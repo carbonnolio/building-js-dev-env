@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <% if (htmlWebpackPlugin.options.someToken) { %>
+      <h2><%=htmlWebpackPlugin.options.someToken%></h2>
+    <% } %>
     <meta charset="UTF-8">
-    <title>title</title>
+    <title>Demo App</title>
   </head>
   <body>
     <h1>Users</h1>

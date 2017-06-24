@@ -46,7 +46,8 @@ export default {
         minifyCSS: true,
         minifyURLs: true
       },
-      inject: true
+      inject: true,
+      someToken: 'Hello World'
     }),
 
     // Eliminate dup packages
