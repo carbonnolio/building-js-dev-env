@@ -36,6 +36,13 @@ build/Release
 node_modules/
 jspm_packages/
 
+#Prod build files
+dist/
+
+#Mock API files
+src/api/
+*.json
+
 # Typescript v1 declaration files
 typings/
 
